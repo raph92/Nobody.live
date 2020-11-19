@@ -73,7 +73,7 @@ def getGames():
 
 @app.route('/')
 def root():
-    return app.send_static_file('index-from-scratch.html')
+    return app.send_static_file('index.html')
 
 
 @app.route('/stream', defaults={'game_id': None})
